@@ -2,486 +2,549 @@
 <html lang="en">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-32516552-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-32516552-2');
-  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta http-equiv="Cache-Control" content="max-age=200" />
-  <title>Chris Mangum</title>
-  <!-- icon -->
+
+  <title>Chris Mangum — Independent Researcher</title>
+  <meta name="description"
+    content="Chris Mangum — independent researcher working on artificial agents, emergent agency, and computational modeling of complex adaptive systems. Creator of the Dooders project and AgentFarm.">
+  <meta name="author" content="Chris Mangum">
+  <meta name="theme-color" content="#dc2626">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chris Mangum — Independent Researcher">
+  <meta property="og:description"
+    content="Artificial agents, emergent agency, and computational modeling. Creator of the Dooders project and AgentFarm.">
+  <meta property="og:url" content="https://csmangum.github.io/">
+  <meta property="og:site_name" content="Chris Mangum">
+  <meta property="og:image" content="https://csmangum.github.io/img/android-chrome-512x512.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@peril10">
+  <meta name="twitter:title" content="Chris Mangum — Independent Researcher">
+  <meta name="twitter:description"
+    content="Artificial agents, emergent agency, and computational modeling. Creator of the Dooders project and AgentFarm.">
+  <meta name="twitter:image" content="https://csmangum.github.io/img/android-chrome-512x512.png">
+
+  <!-- Icons -->
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <link rel="manifest" href="img/site.webmanifest">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-  <!-- Google Fonts Roboto -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- Material Design Bootstrap -->
-  <link rel="stylesheet" href="css/mdb.min.css">
-  <!-- Your custom styles (optional) -->
-  <link rel="stylesheet" href="css/creative.css">
+
+  <!-- Fonts: Inter + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/site.css">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WB6934W4C0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-WB6934W4C0');
+  </script>
 </head>
 
 <body>
-  <header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-      <div class="container">
-        <img src="img/mylogowhite.png" alt="My logo" class="logo">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about" data-offset="90">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects" data-offset="90">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Recommendations" data-offset="90">Recommendations</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">Demos</a>
-              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="https://csmangum.herokuapp.com/comedybot">ComedyBot</a>
-                <a class="dropdown-item" href="https://csmangum.herokuapp.com/pypinion">PyPinion</a>
-                <a class="dropdown-item" href="https://csmangum.herokuapp.com/mugfakes">MugFakes</a>
-                <a class="dropdown-item" href="https://csmangum.herokuapp.com/airbnb">Airbnb</a>
-              </div>
-            </li>
-          </ul>
-          </li>
-          <!-- Social Icon  -->
-          <ul class="navbar-nav nav-flex-icons">
-            <li class="nav-item">
-              <a href="https://www.linkedin.com/in/csmangum/" class="nav-link">
-                <i class="fab fa-linkedin light-green-text-2"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="https://github.com/csmangum?tab=repositories" class="nav-link">
-                <i class="fab fa-github light-green-text-2"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Navbar -->
-    <!-- Full Page Intro -->
-    <div id="intro-section" class="view">
-      <!-- Mask & flexbox options-->
-      <div class="mask background d-flex justify-content-center align-items-center">
-        <!-- Content -->
-        <div class="container px-md-3 px-sm-0">
-          <!--Grid row-->
-          <div class="row wow fadeIn">
-          </div>
-          <!--Grid row-->
-        </div>
-        <!-- Content -->
-      </div>
-      <!-- Mask & flexbox options-->
-    </div>
-    <!-- Full Page Intro -->
-  </header>
-  <!--Main layout-->
-  <main>
-    <!--Section: about-->
-    <section id="about" class="py-5">
-      <!-- Container -->
-      <div class="container">
-        <!-- Section heading -->
-        <h2 class="h1-responsive font-weight-bold text-center mb-5">About Me</h2>
-        <!-- Section description -->
-        <p class="lead grey-text text-center w-responsive mx-auto mb-5">Skilled analyst with 6+ years experience
-          working with data in various high-paced
-          environments. Passionate about leveraging new tools and technologies in interesting and
-          creative ways. Continually looking for different ways to expand my skills and solve complex
-          problems.</p>
-        <!-- Grid row -->
-        <div class="row">
-          <!-- Grid column -->
-          <div class="col-lg-5 text-center text-lg-right">
-            <img class="rounded-circle img-fluid-small" src="img/me.jpg" alt="Sample image">
-          </div>
-          <div class="col-lg-7">
-            <!-- Grid row -->
-            <div class="row mb-3">
-              <!-- Grid column -->
-              <div class="col-1">
-                <i class="fa fa-mail-forward fa-lg purple-text"></i>
-              </div>
-              <!-- Grid column -->
-              <!-- Grid column -->
-              <div class="col-xl-10 col-md-11 col-10">
-                <h4 class="font-weight-bold mb-3">Driven</h4>
-                <p class="grey-text">I strive to reach my full potential through life-long learning. </p>
-              </div>
-              <!-- Grid column -->
-            </div>
-            <!-- Grid row -->
-            <!-- Grid row -->
-            <div class="row mb-3">
-              <!-- Grid column -->
-              <div class="col-1">
-                <i class="fa fa-mail-forward fa-lg purple-text"></i>
-              </div>
-              <div class="col-xl-10 col-md-11 col-10">
-                <h4 class="font-weight-bold mb-3">Creative</h4>
-                <p class="grey-text">I love exploring interesting ways to incorporate my skills.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-1">
-                <i class="fa fa-mail-forward fa-lg purple-text"></i>
-              </div>
-              <div class="col-xl-10 col-md-11 col-10">
-                <h4 class="font-weight-bold mb-3">Analytical</h4>
-                <p class="grey-text mb-0">I take a systematic approach to problems and deliver optimal solutions.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="projects" class="text-center py-5" style="background-color: #eee;">
-      <section class="dark-black-text text-center">
-        <h2 class="h1-responsive font-weight-bold text-center mb-5">Portfolio</h2>
-        <!-- Section description -->
-        <div class="container mt-5">
-          <!-- Grid row -->
-          <div class="row">
-            <!-- Grid column -->
-            <div class="col-lg-4 col-md-12 mb-4">
-              <!-- Card Wider -->
-              <div class="card card-cascade wider">
-                <!-- Card image -->
-                <div class="view view-cascade overlay">
-                  <img class="card-img-top"
-                    src="https://raw.githubusercontent.com/csmangum/mugfakes/master/img/grid_3x2_mosaic.jpg"
-                    alt="Card image cap">
-                  <a href="#!">
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-                <!-- Card content -->
-                <div class="card-body card-body-cascade text-center">
-                  <!-- Title -->
-                  <h4 class="font-weight-bold card-title"><strong>MugFakes</strong></h4>
-                  <!-- Subtitle -->
-                  <h5 class="blue-text pb-2"><strong>Deep Learning</strong></h5>
-                  <!-- Text -->
-                  <p class="card-text">Use Generative Adversarial Networks (GAN) to generate realistic images trained
-                    on thousands of actual mugshots. </p>
-                  <a href="https://github.com/csmangum/mugfakes" class="btn btn-git btn-sm"><i
-                      class="fab fa-github pr-1"></i> View project</a>
-                  <p>
-                    <a href="https://csmangum.herokuapp.com/mugfakes" class="btn btn-dark-green btn-sm"><i
-                        class="fas fa-star right"></i> Try It</a>
-                  </p>
-                </div>
-              </div>
-              <!-- Card Wider -->
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card card-cascade wider">
-                <div class="view view-cascade overlay">
-                  <img class="card-img-top"
-                    src="https://raw.githubusercontent.com/csmangum/portfolio/master/img/quad_v2.gif"
-                    alt="Card image cap">
-                  <a>
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-                <div class="card-body card-body-cascade">
-                  <h4 class="font-weight-bold card-title"><strong>Airbnb Price Prediction</strong></h4>
-                  <h5 class="blue-text pb-2"><strong>Regression</strong></h5>
-                  <!-- Text -->
-                  <p class="card-text">End-to-end project aiming to predict listing price using Scikit-Learn and some
-                    basic NLP analysis.</p>
-                  <!-- Button -->
-                  <a href="https://github.com/csmangum/portfolio/tree/master/Airbnb%20Price%20Prediction"
-                    class="btn btn-git btn-sm"><i class="fab fa-github pr-1"></i> View project</a>
-                  <p>
-                    <a href="#!" class="btn btn-dark-green btn-sm"><i class="fas fa-star right"></i> Try It</a>
-                  </p>
-                </div>
-              </div>
-              <!-- Card Narrower -->
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card card-cascade wider">
-                <div class="view view-cascade overlay">
-                  <img class="card-img-top"
-                    src="https://raw.githubusercontent.com/csmangum/csmangum.github.io/master/img/ai_evo.jpg"
-                    alt="AI Evolution">
-                  <a>
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-                <div class="card-body card-body-cascade text-center">
-                  <h4 class="card-title"><strong>ComedyBot</strong></h4>
-                  <!-- Subtitle -->
-                  <h5 class="blue-text pb-2"><strong>Natural Language Processing</strong></h5>
-                  <!-- Text -->
-                  <p class="card-text">Twitter bot built with Open-AI GPT-2 language model to mimic tweets of a famous
-                    comedian.
-                  </p>
-                  <a href="https://github.com/csmangum/comedy_bot" class="btn btn-git btn-sm"><i
-                      class="fab fa-github pr-1"></i> View project</a>
-                  <p>
-                    <a href="https://csmangum.herokuapp.com/" class="btn btn-dark-green btn-sm"><i
-                        class="fas fa-star right"></i> Try It</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </section>
-    <!--Section: gallery-->
-    <!--    <section id="gallery" class="text-center py-5">-->
+  <!-- ===================== Navbar ===================== -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="#top">
+        Chris Mangum<span class="dot">.</span>
+        <small>research</small>
+      </a>
 
-    <!--      &lt;!&ndash; Container &ndash;&gt;-->
-    <!--      <div class="container">-->
+      <nav aria-label="Primary">
+        <ul class="nav__links">
+          <li><a href="#research">Research</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#writing">Writing</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
 
-
-    <!--        <div class="row">-->
-    <!--          <div class="col-md-12">-->
-
-    <!--            <div id="mdb-lightbox-ui"></div>-->
-
-    <!--            <div class="mdb-lightbox">-->
-
-    <!--              <figure class="col-md-4">-->
-    <!--                <a href="https://raw.githubusercontent.com/csmangum/csmangum.github.io/master/img/e.JPG"-->
-    <!--                   data-size="6000x4000">-->
-    <!--                  <img src="https://raw.githubusercontent.com/csmangum/csmangum.github.io/master/img/e.JPG"-->
-    <!--                       class="img-fluid z-depth-1-half">-->
-    <!--                </a>-->
-    <!--              </figure>-->
-
-    <!--              <figure class="col-md-4">-->
-    <!--                <a href="https://raw.githubusercontent.com/csmangum/csmangum.github.io/master/img/b.JPG"-->
-    <!--                   data-size="6000x4000">-->
-    <!--                  <img src="https://raw.githubusercontent.com/csmangum/csmangum.github.io/master/img/b.JPG"-->
-    <!--                       class="img-fluid z-depth-1-half" />-->
-    <!--                </a>-->
-    <!--              </figure>-->
-
-    <!--              <figure class="col-md-4">-->
-    <!--                <a href="https://raw.githubusercontent.com/csmangum/csmangum.github.io/master/img/c.JPG"-->
-    <!--                   data-size="6000x4000">-->
-    <!--                  <img src="https://raw.githubusercontent.com/csmangum/csmangum.github.io/master/img/c.JPG"-->
-    <!--                       class="img-fluid z-depth-1-half" />-->
-    <!--                </a>-->
-    <!--              </figure>-->
-
-    <!--              <figure class="col-md-4">-->
-    <!--                <a href="https://raw.githubusercontent.com/csmangum/csmangum.github.io/master/img/d.JPG" data-size="6000x4000">-->
-    <!--                  <img src="https://raw.githubusercontent.com/csmangum/csmangum.github.io/master/img/d.JPG"-->
-    <!--                       class="img-fluid z-depth-1-half" />-->
-    <!--                </a>-->
-    <!--              </figure>-->
-
-    <!--              <figure class="col-md-4">-->
-    <!--                <a href="https://raw.githubusercontent.com/csmangum/csmangum.github.io/master/img/a.JPG"-->
-    <!--                   data-size="6000x4000">-->
-    <!--                  <img src="https://raw.githubusercontent.com/csmangum/csmangum.github.io/master/img/a.JPG"-->
-    <!--                       class="img-fluid z-depth-1-half" />-->
-    <!--                </a>-->
-    <!--              </figure>-->
-
-    <!--              <figure class="col-md-4">-->
-    <!--                <a href="https://raw.githubusercontent.com/csmangum/csmangum.github.io/master/img/f.JPG" data-size="6000x4000">-->
-    <!--                  <img src="https://raw.githubusercontent.com/csmangum/csmangum.github.io/master/img/f.JPG"-->
-    <!--                       class="img-fluid z-depth-1-half" />-->
-    <!--                </a>-->
-    <!--              </figure>-->
-
-    <!--              <figure class="col-md-4">-->
-    <!--                <a href="https://raw.githubusercontent.com/csmangum/csmangum.github.io/master/img/g.JPG"-->
-    <!--                   data-size="6000x4000">-->
-    <!--                  <img src="https://raw.githubusercontent.com/csmangum/csmangum.github.io/master/img/g.JPG"-->
-    <!--                       class="img-fluid z-depth-1-half" />-->
-    <!--                </a>-->
-    <!--              </figure>-->
-
-    <!--              <figure class="col-md-4">-->
-    <!--                <a href="https://raw.githubusercontent.com/csmangum/csmangum.github.io/master/img/h.JPG"-->
-    <!--                   data-size="6000x4000">-->
-    <!--                  <img src="https://raw.githubusercontent.com/csmangum/csmangum.github.io/master/img/h.JPG"-->
-    <!--                       class="img-fluid z-depth-1-half" />-->
-    <!--                </a>-->
-    <!--              </figure>-->
-
-    <!--              <figure class="col-md-4">-->
-    <!--                <a href="https://raw.githubusercontent.com/csmangum/csmangum.github.io/master/img/i.JPG"-->
-    <!--                   data-size="6000x4000">-->
-    <!--                  <img src="https://raw.githubusercontent.com/csmangum/csmangum.github.io/master/img/i.JPG"-->
-    <!--                       class="img-fluid z-depth-1-half" />-->
-    <!--                </a>-->
-    <!--              </figure>-->
-
-    <!--            </div>-->
-
-    <!--          </div>-->
-    <!--        </div>-->
-
-    <!--      </div>-->
-    <!--      &lt;!&ndash; Container &ndash;&gt;-->
-
-    <!--    </section>-->
-    <section id="Recommendations" class="text-center py-5">
-      <div class="container">
-        <h2 class="h1-responsive font-weight-bold mb-5">Recommendations</h2>
-        <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade"
-          data-ride="carousel" data-interval="false">
-          <!--Slides-->
-          <div class="carousel-inner" role="listbox">
-            <!--First slide-->
-            <div class="carousel-item active">
-              <div class="testimonial">
-                <!--Avatar-->
-                <div class="avatar mx-auto mb-4">
-                  <img
-                    src="https://media-exp1.licdn.com/dms/image/C4D03AQGm8uqDnaQjbA/profile-displayphoto-shrink_200_200/0?e=1602720000&v=beta&t=CAx9wqE4d2Q-n7EgCYePbMcyQBfFgBci4CXtuzv5iGw"
-                    class="rounded-circle img-fluid" alt="First sample avatar image">
-                </div>
-                <!--Content-->
-                <p>
-                  <i class="fa fa-quote-left"></i> Chris and I worked together on the Process Improvement team
-                  supporting Property and Casualty Claims at State Farm. Chris has an unrivaled passion for data
-                  analytics. His forward-thinking ideas for collecting large sample sizes of data and breaking it
-                  down into usable information was the backbone of success for a number of projects. Chris's
-                  talent and knowledge sharing with the use of text mining and process mining really opened up my
-                  eyes to the capabilities of these tools. Chris is no doubt one of the most reliable people I
-                  have ever worked with. His advanced Excel and data analytic skills is and will be a valuable
-                  addition to any team interested in making data driven decisions in any number of different
-                  work environments.
-                </p>
-                <h4 class="font-weight-bold">Joe Drobny</h4>
-                <h6 class="font-weight-bold my-3">@ State Farm Insurance</h6>
-                <!--Review-->
-              </div>
-            </div>
-            <!--First slide-->
-            <!--Second slide-->
-            <div class="carousel-item">
-              <div class="testimonial">
-                <!--Avatar-->
-                <div class="avatar mx-auto mb-4">
-                  <img
-                    src="https://media-exp1.licdn.com/dms/image/C5603AQHPA5Pfeq4flQ/profile-displayphoto-shrink_200_200/0?e=1602720000&v=beta&t=SJOiX6BLg2EVCIP_yJI0Rbqlu9UwGZ65nqIrnzVzJUk"
-                    class="rounded-circle img-fluid" alt="Second sample avatar image">
-                </div>
-                <!--Content-->
-                <p>
-                  <i class="fa fa-quote-left"></i> Chris is one of the most analytical and creative people I have
-                  had the opportunity to work with. He immediately became the technological leader on our team through
-                  his implementation of text analytics, process mining, and Hadoop. His ability to quickly access data,
-                  utilize multifaceted analytical techniques, and create visualizations made him the go-to resource
-                  on our team. He is an excellent team member and peer leader. His natural abilities and work ethic
-                  will make him a valued resource. </p>
-                <h4 class="font-weight-bold">Barney Franzen</h4>
-                <h6 class="font-weight-bold my-3">@ State Farm Insurance</h6>
-                <h6 class="font-weight-bold my-3">@ Atlas Financial Holdings</h6>
-                <!--Review-->
-              </div>
-            </div>
-            <!--Second slide-->
-            <!--Third slide-->
-            <div class="carousel-item">
-              <div class="testimonial">
-                <!--Avatar-->
-                <div class="avatar mx-auto mb-4">
-                  <img
-                    src="https://media-exp1.licdn.com/dms/image/C4E03AQGuDOFTNDPTVA/profile-displayphoto-shrink_200_200/0?e=1602720000&v=beta&t=hwhgGIBz57TBA_IyaqiieDB1I6G3U7_nQInjT5pRI9Y"
-                    class="rounded-circle img-fluid" alt="Third sample avatar image">
-                </div>
-                <!--Content-->
-                <p>
-                  <i class="fa fa-quote-left"></i> "Very efficient" is the phrase that comes to mind when I think about
-                  Chris, in regards to creating structured data for analysis from unstructured input text. The
-                  descriptive analytics he developed enabled many project teams to tell the story of what happened
-                  or what was happening as a baseline for performance improvement and solution development. I have
-                  had the pleasure of working closely with Chris, and I was continuously impressed by his ability to
-                  handle requests effortlessly and professionally. Chris would be an asset to any team.</p>
-                <h4 class="font-weight-bold">Kevin Holston</h4>
-                <h6 class="font-weight-bold my-3">@ State Farm Insurance</h6>
-              </div>
-            </div>
-            <!--Third slide-->
-          </div>
-          <!--Slides-->
-          <!--Controls-->
-          <a class="carousel-item-prev left carousel-control" href="#carousel-example-1" role="button"
-            data-slide="prev">
-            <span class="icon-prev" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-item-next right carousel-control" href="#carousel-example-1" role="button"
-            data-slide="next">
-            <span class="icon-next" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-          <!--Controls-->
-        </div>
-        <!-- Carousel Wrapper -->
-      </div>
-      <!-- Container -->
-    </section>
-    <!--Section: testimonials-->
-  </main>
-  <footer class="page-footer font-small pt-4">
-    <!-- Footer Elements -->
-    <div class="container">
-      <!-- Social buttons -->
-      <ul class="list-unstyled list-inline text-center">
-        <li class="list-inline-item">
-          <a href="https://www.linkedin.com/in/csmangum/" class="btn-floating btn-li mx-1">
-            <i class="fab fa-linkedin"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://github.com/csmangum?tab=repositories" class="btn-floating btn-fb mx-1">
-            <i class="fab fa-github"> </i>
-          </a>
-        </li>
+      <ul class="nav__social" aria-label="Social links">
+        <li><a href="https://github.com/csmangum" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z" />
+            </svg></a></li>
+        <li><a href="https://github.com/Dooders" target="_blank" rel="noopener" aria-label="Dooders organization">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="3.2" />
+              <circle cx="5" cy="6" r="2.2" />
+              <circle cx="19" cy="6" r="2.2" />
+              <circle cx="5" cy="18" r="2.2" />
+              <circle cx="19" cy="18" r="2.2" />
+              <path d="M6.8 7.2 9.6 10M17.2 7.2 14.4 10M6.8 16.8 9.6 14M17.2 16.8 14.4 14" />
+            </svg></a></li>
+        <li><a href="https://www.linkedin.com/in/csmangum/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z" />
+            </svg></a></li>
+        <li><a href="https://x.com/peril10" target="_blank" rel="noopener" aria-label="X (Twitter)">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z" />
+            </svg></a></li>
+        <li><a href="https://rememberization.substack.com" target="_blank" rel="noopener" aria-label="Substack">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812H22.54V24l-10.54-5.91L1.46 24V10.812zM22.539 2.566H1.46V0h21.08v2.566z" />
+            </svg></a></li>
+        <li><a href="mailto:csmangum@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 6-10 7L2 6" />
+            </svg></a></li>
       </ul>
-      <!-- Social buttons -->
+
+      <a class="nav__toggle" href="#menu" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+      </a>
     </div>
-    <div class="footer-copyright text-center py-3">© 2020 Copyright: Chris Mangum
+  </header>
+
+  <!-- Mobile menu (revealed via :target) -->
+  <nav id="menu" class="mobile-menu" aria-label="Mobile">
+    <ul>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#writing">Writing</a></li>
+      <li><a href="#about">About</a></li>
+      <li class="mobile-menu__social">
+        <a href="https://github.com/csmangum" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/Dooders" target="_blank" rel="noopener">Dooders</a>
+        <a href="https://rememberization.substack.com" target="_blank" rel="noopener">Substack</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main id="top">
+    <!-- ===================== Hero ===================== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <span class="hero__badge"><span class="pulse"></span> Currently building AgentFarm</span>
+        <h1>Chris Mangum</h1>
+        <p class="hero__role">Independent researcher · artificial agents &amp; computational modeling</p>
+        <p class="hero__lead">
+          I study how <strong>agency</strong> and <strong>intelligence</strong> emerge in
+          simulated worlds — building open-source platforms for multi-agent
+          simulation, reinforcement learning, and neuroevolution. Blending
+          engineering and art to learn the logic of nature.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="https://github.com/Dooders" target="_blank" rel="noopener">
+            Explore the Dooders project
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M7 17 17 7M7 7h10v10" />
+            </svg>
+          </a>
+          <a class="btn btn--ghost" href="https://dooders.github.io/AgentFarm/research/devlog/" target="_blank"
+            rel="noopener">Read the research devlog</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Research focus ===================== -->
+    <section id="research" class="section">
+      <div class="container">
+        <p class="section__eyebrow">Research focus</p>
+        <h2 class="section__title">Studying the emergence of agency</h2>
+        <p class="section__lead">
+          My work sits at the intersection of artificial life, reinforcement
+          learning, and complex systems — asking how simple agents, under
+          selection pressure, develop increasingly capable and adaptive behavior.
+        </p>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <span class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <circle cx="6" cy="6" r="2.5" /><circle cx="18" cy="6" r="2.5" /><circle cx="6" cy="18" r="2.5" />
+                <circle cx="18" cy="18" r="2.5" />
+                <path d="M8.5 6h7M6 8.5v7M18 8.5v7M8.5 18h7" />
+              </svg>
+            </span>
+            <h3>Emergent agency &amp; multi-agent systems</h3>
+            <p>How populations of interacting agents discover niches, cooperate,
+              and develop higher levels of causal control over their environment.</p>
+          </article>
+
+          <article class="card">
+            <span class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3v4M12 17v4M3 12h4M17 12h4" />
+                <circle cx="12" cy="12" r="4" />
+                <path d="m5.6 5.6 2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8" />
+              </svg>
+            </span>
+            <h3>Neuroevolution &amp; reinforcement learning</h3>
+            <p>Evolving heritable hyperparameter genomes and decision policies,
+              and probing when learning beats its own initialization.</p>
+          </article>
+
+          <article class="card">
+            <span class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 12a9 9 0 0 1 18 0 9 9 0 0 1-18 0Z" />
+                <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
+              </svg>
+            </span>
+            <h3>Complex adaptive systems</h3>
+            <p>Treating simulation as a microscope — measuring fitness, selection,
+              and inheritance with paired seeds, confidence intervals, and
+              robustness gates.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Featured: Dooders / AgentFarm ===================== -->
+    <section class="section section--muted">
+      <div class="container">
+        <p class="section__eyebrow">Featured work</p>
+        <h2 class="section__title">The Dooders project</h2>
+        <p class="section__lead">
+          An open-source research effort investigating the emergence of
+          intelligent agents within a computational model of reality. Its
+          flagship platform, AgentFarm, is where the experiments run.
+        </p>
+
+        <div class="feature">
+          <div class="feature__body">
+            <p class="feature__kicker">Dooders · open-source platform</p>
+            <h3>AgentFarm</h3>
+            <p>
+              A Python-first platform for agent-based simulation, reinforcement
+              learning, and emergent-behavior research. Multi-agent simulations
+              with configurable genomes and actions, a DQN/neuroevolution decision
+              stack, an experiment runner with SQLite-backed metrics, and an
+              analysis pipeline — all wrapped in a documented, reproducible
+              workflow.
+            </p>
+            <ul class="feature__tags">
+              <li class="tag">multi-agent-systems</li>
+              <li class="tag">neuroevolution</li>
+              <li class="tag">reinforcement-learning</li>
+              <li class="tag">computational-modeling</li>
+              <li class="tag">simulation</li>
+            </ul>
+            <div class="feature__actions">
+              <a class="btn btn--primary btn--sm" href="https://github.com/Dooders/AgentFarm" target="_blank"
+                rel="noopener">View repository</a>
+              <a class="btn btn--ghost btn--sm" href="https://dooders.github.io/AgentFarm/" target="_blank"
+                rel="noopener">Docs site</a>
+              <a class="btn btn--ghost btn--sm" href="https://dooders.github.io/AgentFarm/research/devlog/"
+                target="_blank" rel="noopener">Devlog</a>
+            </div>
+          </div>
+          <aside class="feature__aside">
+            <div class="stat">
+              <span class="stat__num">10+</span>
+              <span class="stat__label">defined research experiments</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">DQN</span>
+              <span class="stat__label">+ distillation &amp; evolution stack</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">Apache 2.0</span>
+              <span class="stat__label">open source &amp; reproducible</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Projects ===================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="section__eyebrow">Selected projects</p>
+        <h2 class="section__title">What I'm building</h2>
+        <p class="section__lead">
+          Current open-source work across the Dooders organization and my
+          personal account — simulation platforms, agent memory, and
+          speech- and language-native agents.
+        </p>
+
+        <div class="grid grid--3">
+          <!-- AgentFarm -->
+          <article class="card project">
+            <div class="project__head">
+              <span class="project__org project__org--dooders">Dooders</span>
+            </div>
+            <h3><a href="https://github.com/Dooders/AgentFarm" target="_blank" rel="noopener">AgentFarm</a></h3>
+            <p>Open-source research platform for simulations of complex systems —
+              agent-based modeling, RL experiments, and analysis.</p>
+            <ul class="project__tags">
+              <li class="tag">simulation</li>
+              <li class="tag">RL</li>
+            </ul>
+            <div class="project__links">
+              <a href="https://github.com/Dooders/AgentFarm" target="_blank" rel="noopener">Repo</a>
+              <a href="https://dooders.github.io/AgentFarm/" target="_blank" rel="noopener">Docs</a>
+            </div>
+          </article>
+
+          <!-- AgentMemory -->
+          <article class="card project">
+            <div class="project__head">
+              <span class="project__org project__org--dooders">Dooders</span>
+            </div>
+            <h3><a href="https://github.com/Dooders/AgentMemory" target="_blank" rel="noopener">AgentMemory</a></h3>
+            <p>A lightweight, pluggable memory backend for agent-based simulations —
+              temporal data, experience replay, and persistent state logging.</p>
+            <ul class="project__tags">
+              <li class="tag">memory-systems</li>
+              <li class="tag">temporal</li>
+            </ul>
+            <div class="project__links">
+              <a href="https://github.com/Dooders/AgentMemory" target="_blank" rel="noopener">Repo</a>
+            </div>
+          </article>
+
+          <!-- Dooders -->
+          <article class="card project">
+            <div class="project__head">
+              <span class="project__org project__org--dooders">Dooders</span>
+            </div>
+            <h3><a href="https://github.com/Dooders/Dooders" target="_blank" rel="noopener">Dooders</a></h3>
+            <p>The original agent/arena experiment — evolving agents that fit their
+              environment and discover unrealized niches. <em>Reality works.
+                Simulate it.</em></p>
+            <ul class="project__tags">
+              <li class="tag">artificial-life</li>
+              <li class="tag">emergence</li>
+            </ul>
+            <div class="project__links">
+              <a href="https://github.com/Dooders/Dooders" target="_blank" rel="noopener">Repo</a>
+            </div>
+          </article>
+
+          <!-- opusagent -->
+          <article class="card project">
+            <div class="project__head">
+              <span class="project__org">Personal</span>
+            </div>
+            <h3><a href="https://github.com/csmangum/opusagent" target="_blank" rel="noopener">opusagent</a></h3>
+            <p>A low-latency realtime bridge integrating telephony for a stateful,
+              speech-native rational agent.</p>
+            <ul class="project__tags">
+              <li class="tag">realtime</li>
+              <li class="tag">voice-agent</li>
+            </ul>
+            <div class="project__links">
+              <a href="https://github.com/csmangum/opusagent" target="_blank" rel="noopener">Repo</a>
+            </div>
+          </article>
+
+          <!-- AgenticPoker -->
+          <article class="card project">
+            <div class="project__head">
+              <span class="project__org">Personal</span>
+            </div>
+            <h3><a href="https://github.com/csmangum/AgenticPoker" target="_blank" rel="noopener">AgenticPoker</a></h3>
+            <p>A 5-card draw poker simulation where LLM-driven agents strategize,
+              learn, and trade natural-language table talk.</p>
+            <ul class="project__tags">
+              <li class="tag">LLM-agents</li>
+              <li class="tag">game-sim</li>
+            </ul>
+            <div class="project__links">
+              <a href="https://github.com/csmangum/AgenticPoker" target="_blank" rel="noopener">Repo</a>
+            </div>
+          </article>
+
+          <!-- GCA -->
+          <article class="card project">
+            <div class="project__head">
+              <span class="project__org">Personal</span>
+            </div>
+            <h3><a href="https://github.com/csmangum/GCA" target="_blank" rel="noopener">GCA</a></h3>
+            <p>Generative Cellular Automata — exploring how local rules give rise to
+              rich, emergent global structure.</p>
+            <ul class="project__tags">
+              <li class="tag">cellular-automata</li>
+              <li class="tag">generative</li>
+            </ul>
+            <div class="project__links">
+              <a href="https://github.com/csmangum/GCA" target="_blank" rel="noopener">Repo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Writing / Devlog ===================== -->
+    <section id="writing" class="section section--muted">
+      <div class="container">
+        <p class="section__eyebrow">Writing</p>
+        <h2 class="section__title">From the AgentFarm devlog</h2>
+        <p class="section__lead">
+          Build notes, design decisions, and experiment outcomes — written as the
+          research happens, with real results and the occasional dead end.
+        </p>
+
+        <ul class="posts">
+          <li class="post">
+            <span class="post__date">2026-06-20</span>
+            <div>
+              <h3 class="post__title"><a
+                  href="https://dooders.github.io/AgentFarm/research/devlog/2026-06-20-transferable-signal-budget/"
+                  target="_blank" rel="noopener">The transferable-signal gate: do learned policies beat their own
+                  init?</a></h3>
+              <p class="post__excerpt">Before building richer inherited payloads, confirm there is anything worth
+                inheriting — paired held-out rollouts show a modest but robust early-age decision-quality signal.</p>
+            </div>
+          </li>
+          <li class="post">
+            <span class="post__date">2026-06-09</span>
+            <div>
+              <h3 class="post__title"><a
+                  href="https://dooders.github.io/AgentFarm/research/devlog/2026-06-09-every-agent-a-different-goal/"
+                  target="_blank" rel="noopener">When every agent has a different goal</a></h3>
+              <p class="post__excerpt">Making the reward function itself a per-agent, heritable trait — un-curated
+                objective diversity measurably lowers collective fitness across 20 paired seeds.</p>
+            </div>
+          </li>
+          <li class="post">
+            <span class="post__date">2026-06-04</span>
+            <div>
+              <h3 class="post__title"><a
+                  href="https://dooders.github.io/AgentFarm/research/devlog/2026-06-04-are-we-measuring-at-the-wrong-level/"
+                  target="_blank" rel="noopener">Are we measuring at the wrong level?</a></h3>
+              <p class="post__excerpt">Re-scoring a 36-run inheritance A/B at the newborn level — small robust
+                behavioral shifts, but the population-level null wasn't a measurement artifact.</p>
+            </div>
+          </li>
+          <li class="post">
+            <span class="post__date">2026-05-21</span>
+            <div>
+              <h3 class="post__title"><a
+                  href="https://dooders.github.io/AgentFarm/research/devlog/2026-05-21-baldwinian-vs-lamarckian-ab-harness/"
+                  target="_blank" rel="noopener">Baldwinian vs Lamarckian: policy warm-start across three resource
+                  regimes</a></h3>
+              <p class="post__excerpt">A full 36-run matched matrix — warm-start applied most of the time and paired
+                runs diverged, but no profile cleared the robustness gate.</p>
+            </div>
+          </li>
+          <li class="post">
+            <span class="post__date">2026-05-18</span>
+            <div>
+              <h3 class="post__title"><a
+                  href="https://dooders.github.io/AgentFarm/research/devlog/2026-05-18-gene-flow-and-the-buffer/"
+                  target="_blank" rel="noopener">Gene flow and the buffer</a></h3>
+              <p class="post__excerpt">A crossover-enabled rerun closes the buffer arc with a profile-dependent
+                result on how gene flow reshapes speciation.</p>
+            </div>
+          </li>
+        </ul>
+
+        <a class="writing__more" href="https://dooders.github.io/AgentFarm/research/devlog/" target="_blank"
+          rel="noopener">
+          See all posts on the devlog
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14M13 6l6 6-6 6" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===================== About ===================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <p class="section__eyebrow">About</p>
+        <h2 class="section__title">Independent research</h2>
+        <div class="about__prose">
+          <p>
+            I'm an independent researcher focused on <strong>artificial agents</strong>
+            and <strong>computational modeling</strong>. My through-line is
+            <strong>agency</strong> — how it arises, how it can be measured, and how
+            it grows when agents are placed under real selection pressure inside
+            simulated worlds.
+          </p>
+          <p>
+            Most of that work lives in the open under the
+            <a href="https://github.com/Dooders" target="_blank" rel="noopener">Dooders</a>
+            project, where <a href="https://github.com/Dooders/AgentFarm" target="_blank"
+              rel="noopener">AgentFarm</a> serves as the experimental platform.
+            Alongside the simulation research, I build speech- and language-native
+            agents and tools, and I write up results — successes and dead ends
+            alike — in the
+            <a href="https://dooders.github.io/AgentFarm/research/devlog/" target="_blank" rel="noopener">devlog</a>.
+          </p>
+          <p>
+            I treat simulation as a microscope and care about doing it rigorously:
+            paired seeds, confidence intervals, and robustness gates before
+            claiming an effect is real.
+          </p>
+          <blockquote class="about__quote">
+            Attempting to blend engineering and art to learn the logic of nature.
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <ul class="footer__social" aria-label="Social links">
+        <li><a href="https://github.com/csmangum" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z" />
+            </svg></a></li>
+        <li><a href="https://github.com/Dooders" target="_blank" rel="noopener" aria-label="Dooders organization">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="3.2" />
+              <circle cx="5" cy="6" r="2.2" />
+              <circle cx="19" cy="6" r="2.2" />
+              <circle cx="5" cy="18" r="2.2" />
+              <circle cx="19" cy="18" r="2.2" />
+              <path d="M6.8 7.2 9.6 10M17.2 7.2 14.4 10M6.8 16.8 9.6 14M17.2 16.8 14.4 14" />
+            </svg></a></li>
+        <li><a href="https://www.linkedin.com/in/csmangum/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z" />
+            </svg></a></li>
+        <li><a href="https://x.com/peril10" target="_blank" rel="noopener" aria-label="X (Twitter)">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z" />
+            </svg></a></li>
+        <li><a href="https://rememberization.substack.com" target="_blank" rel="noopener" aria-label="Substack">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812H22.54V24l-10.54-5.91L1.46 24V10.812zM22.539 2.566H1.46V0h21.08v2.566z" />
+            </svg></a></li>
+        <li><a href="mailto:csmangum@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 6-10 7L2 6" />
+            </svg></a></li>
+      </ul>
+      <p class="footer__meta">© 2026 Chris Mangum · <span class="mono">independent researcher</span></p>
+      <p class="footer__meta">Built with vanilla HTML &amp; CSS · hosted on GitHub Pages</p>
     </div>
   </footer>
-  <!-- jQuery -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
 </body>
 
 </html>
