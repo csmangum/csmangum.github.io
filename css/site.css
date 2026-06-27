@@ -508,7 +508,8 @@ strong {
   border-radius: var(--radius-sm);
   color: var(--accent);
   background: var(--accent-soft);
-  border: 1px solid color-mix(in srgb, var(--accent) 18%, transparent);
+  border: 1px solid var(--border);
+  border-color: color-mix(in srgb, var(--accent) 18%, transparent);
 }
 
 .card__icon svg {
