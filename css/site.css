@@ -680,6 +680,7 @@ strong {
 }
 
 .post:hover {
+  background: var(--bg-muted);
   background: color-mix(in srgb, var(--bg-muted) 60%, transparent);
 }
 
