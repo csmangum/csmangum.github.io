@@ -267,10 +267,6 @@ strong {
   padding: 12px 0;
 }
 
-.mobile-menu:target {
-  display: block;
-}
-
 .mobile-menu ul {
   max-width: var(--container);
   margin-inline: auto;
@@ -817,6 +813,10 @@ strong {
 
   .nav__toggle {
     display: inline-flex;
+  }
+
+  .mobile-menu:target {
+    display: block;
   }
 
   .grid--3 {
