@@ -148,6 +148,7 @@ strong {
   height: var(--nav-h);
   display: flex;
   align-items: center;
+  background: var(--bg);
   background: color-mix(in srgb, var(--bg) 82%, transparent);
   backdrop-filter: saturate(160%) blur(12px);
   -webkit-backdrop-filter: saturate(160%) blur(12px);
